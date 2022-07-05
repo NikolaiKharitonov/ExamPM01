@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PawnshopModelContainer" CdmEntityContainer="PawnshopEntities">
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="PawnshopModel.Clients">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="IDClient" ColumnName="IDClient" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Patron" ColumnName="Patron" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="PassportSer" ColumnName="PassportSer" />
+          <ScalarProperty Name="PassportNum" ColumnName="PassportNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonthlyPayments">
+      <EntityTypeMapping TypeName="PawnshopModel.MonthlyPayments">
+        <MappingFragment StoreEntitySet="MonthlyPayments">
+          <ScalarProperty Name="IDMonthlyPayment" ColumnName="IDMonthlyPayment" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="Deadline" ColumnName="Deadline" />
+          <ScalarProperty Name="FactPayment" ColumnName="FactPayment" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="PawnshopModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="IDProduct" ColumnName="IDProduct" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="EstimatedCost" ColumnName="EstimatedCost" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="DepositSum" ColumnName="DepositSum" />
+          <ScalarProperty Name="RedemptionSum" ColumnName="RedemptionSum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales">
+      <EntityTypeMapping TypeName="PawnshopModel.Sales">
+        <MappingFragment StoreEntitySet="Sales">
+          <ScalarProperty Name="IDSale" ColumnName="IDSale" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staff">
+      <EntityTypeMapping TypeName="PawnshopModel.Staff">
+        <MappingFragment StoreEntitySet="Staff">
+          <ScalarProperty Name="IDEmployee" ColumnName="IDEmployee" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Patron" ColumnName="Patron" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusesOfPayments">
+      <EntityTypeMapping TypeName="PawnshopModel.StatusesOfPayments">
+        <MappingFragment StoreEntitySet="StatusesOfPayments">
+          <ScalarProperty Name="IDStatus" ColumnName="IDStatus" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PawnshopModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypesOfProducts">
+      <EntityTypeMapping TypeName="PawnshopModel.TypesOfProducts">
+        <MappingFragment StoreEntitySet="TypesOfProducts">
+          <ScalarProperty Name="IDType" ColumnName="IDType" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
