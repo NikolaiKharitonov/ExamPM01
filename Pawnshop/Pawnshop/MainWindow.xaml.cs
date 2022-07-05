@@ -22,6 +22,12 @@ namespace Pawnshop
     public partial class MainWindow : Window
     {
         PawnshopEntities connect = null;
+
+        public static bool TestAuth(string password, string login)
+        {
+            throw new NotImplementedException();
+        }
+
         Staff currentStaff = null;
         public MainWindow()
         {
